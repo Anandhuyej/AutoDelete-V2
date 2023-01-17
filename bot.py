@@ -17,7 +17,8 @@ for usr in environ.get("ADMINS").split():
 START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a specific time</b>"
 
 
-User = Client(name=SESSION,
+User = Client(name='userstring',
+              session_string=SESSION,
               api_id=API_ID,
               api_hash=API_HASH,
               workers=300
